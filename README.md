@@ -2,7 +2,7 @@
 
 ## Brief
 Before going into details, lets get directly to the main thing<br>
-Our API Endpoint is live on `https://hehe-1-n40u.onrender.com/api/remove-background`
+Our API Endpoint is live on `POST https://hehe-1-n40u.onrender.com/api/remove-background`
 
 ---
 
@@ -117,7 +117,7 @@ const storageDir = path.join(__dirname, '../public/images');
 
 ### Remove Background Endpoint
 
-**Endpoint:** `POST /api/remove-background`
+**Endpoint:** `POST https://hehe-1-n40u.onrender.com/api/remove-background`
 
 **Request Headers:**
 ```plaintext
