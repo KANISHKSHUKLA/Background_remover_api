@@ -1,9 +1,10 @@
 # Background Removal API Documentation
 
-## BRIEF
-Before going into details, lets get directly to the main things
-API Endpoint is live on `https://hehe-1-n40u.onrender.com/api/remove-background`
+## Brief
+Before going into details, lets get directly to the main thing\n
+Our API Endpoint is live on `https://hehe-1-n40u.onrender.com/api/remove-background`
 
+---
 
 ## Overview
 The Background Removal API is a service that removes backgrounds from product images for e-commerce platforms. It accepts image URLs and bounding box coordinates, processes the images to remove backgrounds, and returns the processed images with transparent backgrounds.
