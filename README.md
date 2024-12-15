@@ -16,8 +16,6 @@ The Background Removal API is a service that removes backgrounds from product im
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [API Documentation](#api-documentation)
-- [Deployment Guide](#deployment-guide)
-- [Testing](#testing)
 - [Postman Collection](#postman-collection)
 - [Error Handling](#error-handling)
 - [Logging](#logging)
@@ -102,7 +100,7 @@ The Background Removal API is a service that removes backgrounds from product im
    ```
 ---
 Currently the `src/services/storage.js` is setup for storing Processed image in Render's temporary storage<br>
-In order to save images into your local computer, replace the storage directly line i.e. Line 5 with<br>
+In order to save images into your local computer, replace the storage directory line i.e. `Line 5` with <br>
 ```javascript
 const storageDir = path.join(__dirname, '../public/images');
 ```
