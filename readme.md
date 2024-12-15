@@ -1,5 +1,10 @@
 # Background Removal API Documentation
 
+##BRIEF
+Before going into details, lets get directly to the main things
+API Endpoint is live on `https://hehe-1-n40u.onrender.com/api/remove-background`
+
+
 ## Overview
 The Background Removal API is a service that removes backgrounds from product images for e-commerce platforms. It accepts image URLs and bounding box coordinates, processes the images to remove backgrounds, and returns the processed images with transparent backgrounds.
 
@@ -23,21 +28,17 @@ The Background Removal API is a service that removes backgrounds from product im
 ### Core Technologies
 - **Node.js** (v14+)
 - **Express.js** - Web framework
-- **AWS SDK** - For S3 storage integration
 - **Remove.bg API** - For background removal processing
 
 ### Dependencies
 - `express` - Web server framework
-- `aws-sdk` - AWS services integration
 - `axios` - HTTP client
 - `dotenv` - Environment configuration
 - `joi` - Request validation
-- `multer` - File upload handling
 - `remove.bg` - Background removal service
 - `winston` - Logging
 
 ### Development Dependencies
-- `jest` - Testing framework
 - `nodemon` - Development server
 - `supertest` - API testing
 
@@ -75,9 +76,8 @@ The Background Removal API is a service that removes backgrounds from product im
 
 ### Prerequisites
 1. **Node.js** (v14 or higher)
-2. **AWS Account** with S3 bucket
-3. **Remove.bg API key**
-4. **Git**
+2. **Remove.bg API key**
+3. **Git**
 
 ### Local Development Setup
 1. Clone the repository:
@@ -97,12 +97,7 @@ The Background Removal API is a service that removes backgrounds from product im
    ```
    Edit `.env` file with your credentials:
    ```plaintext
-   PORT=3000
    REMOVE_BG_API_KEY=your_remove_bg_api_key
-   AWS_ACCESS_KEY_ID=your_aws_access_key_id
-   AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
-   AWS_REGION=your_aws_region
-   AWS_S3_BUCKET=your_s3_bucket_name
    ```
 
 4. Start the development server:
@@ -162,69 +157,14 @@ Content-Type: application/json
 
 ---
 
-## Deployment Guide
-
-### AWS Deployment Steps
-
-1. **Create an EC2 instance:**
-   - Choose **Ubuntu Server 20.04 LTS**
-   - Configure security groups to allow HTTP/HTTPS traffic
-   - Generate and download SSH key pair
-
-2. SSH into your instance:
-   ```bash
-   ssh -i your-key.pem ubuntu@your-instance-ip
-   ```
-
-3. Install Node.js and npm:
-   ```bash
-   curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
-   sudo apt-get install -y nodejs
-   ```
-
-4. Clone and setup the application:
-   ```bash
-   git clone [repository-url]
-   cd background-removal-api
-   npm install
-   ```
-
-5. Setup environment variables:
-   ```bash
-   cp .env.example .env
-   nano .env   # Edit with your credentials
-   ```
-
-6. Install PM2 for process management:
-   ```bash
-   sudo npm install -g pm2
-   pm2 start src/server.js
-   pm2 startup
-   ```
 
 ### API Endpoint
-The API is accessible at: `http://your-domain/api/remove-background`
+The API is accessible at: `https://hehe-1-n40u.onrender.com/api/remove-background`
 
 ---
 
-## Testing
-
-Run the test suite:
-```bash
-npm test
-```
-
-The tests cover:
-- Input validation
-- API endpoint functionality
-- Error handling
-- Image processing workflow
 
 ---
-
-## Postman Collection
-
-[Download Postman Collection](link-to-your-postman-collection)
 
 ### Example Request
 ```json
@@ -239,15 +179,6 @@ The tests cover:
 }
 ```
 
-### Environment Variables
-```json
-{
-    "BASE_URL": "http://your-api-domain",
-    "API_KEY": "your-api-key"
-}
-```
-
----
 
 ## Error Handling
 
