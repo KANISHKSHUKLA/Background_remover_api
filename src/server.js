@@ -1,20 +1,16 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const routes = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
 const logger = require('./utils/logger');
-
-dotenv.config();
-
+const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
-// Routes
 app.use('/api', routes);
+app.use('/images', express.static(path.join('/tmp', 'processed-images')));
 
-// Error handling
 app.use(errorHandler);
 
 app.listen(PORT, () => {
