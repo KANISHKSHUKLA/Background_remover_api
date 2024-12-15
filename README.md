@@ -100,6 +100,13 @@ The Background Removal API is a service that removes backgrounds from product im
    ```plaintext
    REMOVE_BG_API_KEY=your_remove_bg_api_key
    ```
+---
+Currently the `src/services/storage.js` is setup for storing Processed image in Render's temporary storage<br>
+In order to save images into your local computer, replace the storage directly line i.e. Line 5 with<br>
+```javascript
+const storageDir = path.join(__dirname, '../public/images');
+```
+---
 
 4. Start the development server:
    ```bash
