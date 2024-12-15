@@ -141,7 +141,7 @@ Content-Type: application/json
 ```json
 {
     "original_image_url": "https://example.com/image.jpg",
-    "processed_image_url": "https://your-bucket.s3.region.amazonaws.com/processed-image.png"
+    "processed_image_url": "https://hehe-1-n40u.onrender.com/images/processed-image-4564435T345.png"
 }
 ```
 
