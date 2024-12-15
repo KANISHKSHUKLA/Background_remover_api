@@ -1,7 +1,7 @@
 # Background Removal API Documentation
 
 ## Brief
-Before going into details, lets get directly to the main thing\n
+Before going into details, lets get directly to the main thing<br>
 Our API Endpoint is live on `https://hehe-1-n40u.onrender.com/api/remove-background`
 
 ---
