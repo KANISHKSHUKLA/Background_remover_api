@@ -16,7 +16,6 @@ The Background Removal API is a service that removes backgrounds from product im
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [API Documentation](#api-documentation)
-- [Postman Collection](#postman-collection)
 - [Error Handling](#error-handling)
 - [Logging](#logging)
 
