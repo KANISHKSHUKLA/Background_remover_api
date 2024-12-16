@@ -1,6 +1,7 @@
 const { removeBackgroundFromImageUrl } = require('remove.bg');
 const axios = require('axios');
 const logger = require('../utils/logger');
+require('dotenv').config();
 const apiKey = process.env.REMOVE_BG_API_KEY
 
 exports.removeBackground = async (imageUrl, boundingBox) => {
